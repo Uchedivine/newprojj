@@ -127,8 +127,10 @@ class _productWidgetState extends State<productWidget> {
             Container(
               height: 31,
               width: 140,
-              color: Colors.teal,
-              // decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(3),
+                color: Colors.teal,
+              ),
               child: Center(
                 child: Text(
                   'Add to cart',

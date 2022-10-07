@@ -14,145 +14,127 @@ class cartPage extends StatefulWidget {
 class _cartPageState extends State<cartPage> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20),
-      child: Column(
-        children: [
-          Text(
-            'Your Cart',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.only(left: 20, right: 20),
+        child: Column(
+          children: [
+            const Text(
+              'Your Cart',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
-              Text(
-                'Delivery to',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text(
+                  'Delivery to',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              Text(
-                'Salatiga City, Central java',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                SizedBox(
+                  width: 20,
                 ),
-              )
-            ],
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              cartlist(
-                  iconImagePath: 'assets/images/img1.png',
-                  title: 'Airpods max by Apple',
-                  subTitle: 'Variant : Grey',
-                  price: '\$1999.99'),
-
-              cartlist(
-                  iconImagePath: 'assets/images/img2.png',
-                  title: 'Airpods pro2 by Apple',
-                  subTitle: 'Variant : white',
-                  price: '\$1999.99'),
-
-              cartlist(
-                  iconImagePath: 'assets/images/img3.png',
-                  title: 'Airpods pro2 by Apple',
-                  subTitle: 'Variant : white',
-                  price: '\$1999.99'),
-
-              cartlist(
-                  iconImagePath: 'assets/images/img4.png',
-                  title: 'Airpods pro2 by Apple',
-                  subTitle: 'Variant : white',
-                  price: '\$1999.99'),
-
-              cartlist(
-                  iconImagePath: 'assets/images/img5.png',
-                  title: 'Airpods pro2 by Apple',
-                  subTitle: 'Variant : white',
-                  price: '\$1999.99'),
-
-              // Row(
-              //   children: [
-              //     Container(
-              //       height: 24,
-              //       width: 24,
-              //       color: Colors.white,
-              //     ),
-              //     SizedBox(
-              //       width: 5,
-              //     ),
-              //     Image.asset('assets/images/img1.png'),
-              //     SizedBox(
-              //       width: 10,
-              //     ),
-              //     Column(
-              //       mainAxisAlignment: MainAxisAlignment.start,
-              //       children: [
-              //         Text(
-              //           'Airpods max by Apple',
-              //           style: TextStyle(
-              //             fontSize: 20,
-              //             color: Colors.black,
-              //           ),
-              //         ),
-              //         Text(
-              //           'Variant : Grey',
-              //           style: TextStyle(
-              //             fontSize: 18,
-              //             color: Colors.grey,
-              //           ),
-              //         ),
-              //         SizedBox(
-              //           height: 10,
-              //         ),
-              //         Row(
-              //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //           children: [
-              //             Text(
-              //               '\$1999.99',
-              //               style: TextStyle(
-              //                 fontSize: 20,
-              //                 color: Colors.black,
-              //               ),
-              //             ),
-              //             SizedBox(
-              //               width: 10,
-              //             ),
-              //             Icon(Icons.remove_circle_outline),
-              //             Text(
-              //               '1',
-              //               style: TextStyle(fontSize: 20),
-              //             ),
-              //             Icon(Icons.add_circle_outline),
-              //             Icon(Icons.delete_outline_rounded)
-              //           ],
-              //         ),
-              //       ],
-              //     ),
-
-              //   ],
-              // ),
-              SizedBox(
-                height: 10,
-              ),
-            ],
-          )
-        ],
+                Text(
+                  'Salatiga City, Central java',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                cartlist(
+                    iconImagePath: 'assets/images/img1.png',
+                    title: 'Airpods max by Apple',
+                    subTitle: 'Variant : Grey',
+                    price: '\$1999.99'),
+                cartlist(
+                    iconImagePath: 'assets/images/img2.png',
+                    title: 'Airpods pro2 by Apple',
+                    subTitle: 'Variant : white',
+                    price: '\$1999.99'),
+                cartlist(
+                    iconImagePath: 'assets/images/img3.png',
+                    title: 'Airpods pro2 by Apple',
+                    subTitle: 'Variant : white',
+                    price: '\$1999.99'),
+                cartlist(
+                    iconImagePath: 'assets/images/img4.png',
+                    title: 'Airpods pro2 by Apple',
+                    subTitle: 'Variant : white',
+                    price: '\$1999.99'),
+                cartlist(
+                    iconImagePath: 'assets/images/img5.png',
+                    title: 'Airpods pro2 by Apple',
+                    subTitle: 'Variant : white',
+                    price: '\$1999.99'),
+                const SizedBox(
+                  height: 10,
+                ),
+                Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      // ignore: prefer_const_literals_to_create_immutables
+                      children: [
+                        const Text(
+                          'Totals',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                          ),
+                        ),
+                        const Text(
+                          '\$6999.90',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 748,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(3),
+                        color: Colors.teal,
+                      ),
+                      child: const Center(
+                        child: Text(
+                          'Continue for payments',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

@@ -28,6 +28,14 @@ class _cartlistState extends State<cartlist> {
     return Row(
       children: [
         Container(
+          height: 24,
+          width: 24,
+          color: Colors.grey,
+        ),
+        SizedBox(
+          width: 5,
+        ),
+        Container(
           height: 82,
           width: 76,
           child: Image.asset(widget.iconImagePath),
