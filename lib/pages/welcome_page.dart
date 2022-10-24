@@ -6,6 +6,8 @@ import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:newprojj/pages/cart.dart';
 import 'package:newprojj/pages/dashboard.dart';
 import 'package:newprojj/pages/details.dart';
+import 'package:newprojj/pages/login%20and%20register/login.dart';
+import 'package:newprojj/pages/login%20and%20register/register.dart';
 import 'package:newprojj/widgets/products_widgets.dart';
 
 class welcomepage extends StatefulWidget {
@@ -18,8 +20,8 @@ class welcomepage extends StatefulWidget {
 class _welcomepageState extends State<welcomepage> {
   List<Widget> pages = [
     dashboard(),
-    productWidget(),
-    detailsPage(),
+    Loginpage(),
+    registerPage(),
     cartPage(),
   ];
 
